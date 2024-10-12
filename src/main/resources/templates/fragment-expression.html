@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Frangmentation</title>
+</head>
+<body>
+<div th:replace="~{common/header :: header}"></div>
+<div>
+    <h1>A Curated list of all the Thymeleaf Expressions and demo</h1>
+    <ul>
+        <li>
+            <a th:href="@{/hello-world}"> Hello world</a>
+        </li>
+
+        <li>
+            <a th:href="@{/if-unless}">if unless</a>
+        </li>
+
+        <li>
+            <a th:href="@{/link-expression}">Link Expression</a>
+        </li>
+
+        <li>
+            <a th:href="@{/message-expression}">Message Expression</a>
+        </li>
+
+        <li>
+            <a th:href="@{/register-form}">Register Form</a>
+        </li>
+
+        <li>
+            <a th:href="@{/selection-expression}">selection expression</a>
+        </li>
+
+        <li>
+            <a th:href="@{/switch-case}">switch case</a>
+        </li>
+
+        <li>
+            <a th:href="@{/users}">Users</a>
+        </li>
+
+        <li>
+            <a th:href="@{/variable-expression}">Variable expression</a>
+        </li>
+    </ul>
+</div>
+<div th:replace="~{common/footer :: footer}"></div>
+</body>
+</html>
